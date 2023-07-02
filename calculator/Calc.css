@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+    min-height: 100vh;
+}
+
+#calculatorBody {
+    position: relative;
+    display: block;
+    height: 700px;
+    width: 548px;
+    background-color: #e6dddd;
+    border-radius: 15px;
+}
+
+#calculatorBody #display {
+    position: absolute;
+    height: 160px;
+    width: 548px;
+    /* background: linear-gradient(to bottom,#e6dddd , #fff); */
+    background-color: #e6dddd;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#calculatorBody #AC {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 160px;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #toggle {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-left: 0px;
+    top: 160px;
+    left: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #percent {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 160px;
+    left: 274px;
+    border-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #divide {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 160px;
+    left: 411px;
+    border-left: 0px;
+    border-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 62, 62);
+    cursor: pointer;
+    color: antiquewhite
+}
+
+#calculatorBody #seven {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #eight {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 268px;
+    left: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #nine {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 268px;
+    left: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #multiply {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 268px;
+    left: 411px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 62, 62);
+    cursor: pointer;
+    color: antiquewhite
+}
+
+#calculatorBody #four {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 376px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #five {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 376px;
+    left: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #six {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 376px;
+    left: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #subtract {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 376px;
+    left: 411px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 62, 62);
+    cursor: pointer;
+    color: antiquewhite
+}
+
+#calculatorBody #one {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 484px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #two {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 484px;
+    left: 137px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #three {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 484px;
+    left: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #addition {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 484px;
+    left: 411px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 62, 62);
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+#calculatorBody #zero {
+    position: absolute;
+    height: 108px;
+    width: 274px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 592px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+    border-bottom-left-radius: 15px;
+}
+
+#calculatorBody #point {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    border-top: 0px;
+    border-left: 0px;
+    top: 592px;
+    left: 274px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+#calculatorBody #equal {
+    position: absolute;
+    height: 108px;
+    width: 137px;
+    border: 3px black solid;
+    top: 592px;
+    left: 411px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 62, 62);
+    cursor: pointer;
+    color: antiquewhite;
+    border-bottom-right-radius: 15px;
+}
+
+/* could have used a class for similar type of buttons */
