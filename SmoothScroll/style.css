@@ -1,0 +1,373 @@
+/* The Body Header*/
+#BodyHeader {
+    height: 65vh;
+    background-image: url(/CssStart/StartingWithResumeProject/assets/macbook_mouse.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*Making every section display as flex*/
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+section:nth-child(odd) {
+    background-color: white;
+}
+
+/* section:target{
+    background-color: aqua;
+} */
+/* Horizontal list*/
+
+.Horizontal-List {
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    /* padding-left: 10px; */
+}
+
+.Horizontal-List li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25px;
+}
+
+.Horizontal-List li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s;
+    transition: border-bottom 0.5s;
+}
+
+.Horizontal-List li a:hover {
+    color: rgb(255, 242, 189);
+    border-bottom: 1px solid white;
+}
+
+.TextCenter {
+    text-align: center;
+}
+
+/* Name */
+#NameSocialContainer {
+    margin-top: 20vh;
+}
+
+#MyName {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: color 1s;
+    text-align: center;
+}
+
+/* Name part */
+#MyName:hover {
+    color: rgb(255, 242, 189);
+}
+
+/*Social Icons part*/
+.HorizontalList2 {
+    list-style: none;
+}
+
+.HorizontalList2 li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.HorizontalList2 li a {
+    text-decoration: none;
+    color: rgb(183, 221, 245);
+    transition: color 0.5s;
+}
+
+.HorizontalList2 li a:hover {
+    color: rgb(255, 242, 189);
+}
+
+.HorizontalList2 li a i {
+    border-radius: 50%;
+    font-size: x-large;
+    padding: 10px;
+}
+
+.HorizontalList2 li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.5);
+}
+
+/* About Section*/
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#AboutPara {
+    width: 70%;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+#AboutPara strong {
+    color: blue;
+}
+
+/*Image*/
+#Image {
+    height: 12rem;
+    width: 12rem;
+    /* background-image:url(/CssStart/StartingWithResumeProject/assets/Screenshot\ 2023-02-02\ at\ 2.41.06\ PM.png) ; */
+    background-image: url(/HTMLBasics/images/Five-tips-for-front-end-web-development.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -12vh;
+    border-color: whitesmoke;
+    border-style: solid;
+    box-shadow: 0px 0px 4px 6px lightgray;
+    margin-bottom: 2vh;
+}
+
+/* Skills Section*/
+#sectionHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+#sectionHeading span {
+    font-size: 40px;
+    font-weight: 400;
+    color: #2857a4;
+    margin-right: 0.5rem;
+}
+
+/* #skillsDisplay{
+    width:80%;
+    height:150px;
+    border:3px black solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+/*Skills*/
+/* #cplus{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem; 
+}
+#cplus div{
+    background-color: blue;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 40%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+}
+#cplus div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* java skills */
+/* #java{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem;
+}
+#java div{
+    background-color:orange;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 80%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+}
+#java div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* html skills */
+/* #html{
+    height: 1.4rem;
+    width: 7rem;
+    background-color:lightgrey;
+    border-radius:0.8rem;
+}
+#html div{
+    background-color:chocolate;
+    height: 100%;
+    border-radius: 0.8rem;
+    width: 80%;
+    box-shadow: 2px 0px 4px 2px gray;
+    overflow: hidden;
+} 
+#html div span{
+    color:white;
+    margin-left: 10px;
+    font-size: smaller;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} */
+/* experience part */
+#experienceHeading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#experienceHeading span {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: xx-large;
+    color: #2857a4;
+}
+
+#timeLine {
+    position: relative;
+    width: 75%;
+    border: 3px solid black;
+}
+
+.timeLineBox {
+    position: relative;
+    width: 40%;
+    left: 5%;
+    border: 1px solid black;
+    min-height: 150px;
+    margin-top: 3px;
+}
+
+.timeLineBox:nth-child(2n) {
+    left: 53%;
+}
+
+.timeLineDivider {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    width: 0;
+    height: 95%;
+    border: 2px black dashed;
+}
+
+.timeLineTraveller {
+    position: sticky;
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:600px) {
+    .timeLineDivider {
+        left: 8%;
+    }
+
+    .timeLineBox {
+        width: 80%;
+        left: 12% !important;
+    }
+
+    /* .timeLineBox:nth-child(2n){
+        left:12%;
+    } */
+}
+
+
+#skillsDisplay {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 70%;
+    height: 200px;
+    border: 3px black solid;
+}
+
+#skillsDisplay #java{
+    position:absolute;
+    height:30%;
+    width:20%;
+    border: 3px solid black;
+    left:10%;
+    top:10%;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+#skillsDisplay #java div{
+    position: absolute;
+    height:100%;
+    width:70%;
+    background-color:brown;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-size: larger;
+    color: white;
+}
+
+#skillsDisplay #java span{
+    position: absolute;
+    left:30%;
+    top:30%
+}
+#skillsDisplay #html{
+    position:absolute;
+    height:30%;
+    width:20%;
+    border: 3px solid black;
+    left:40%;
+    top:10%;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+#skillsDisplay #html div{
+    position: absolute;
+    height:100%;
+    width:40%;
+    background-color:blueviolet;
+    border-top-left-radius: 17px;
+    border-bottom-left-radius: 17px;
+    font-size: larger;
+    color: white;
+}
+
+#skillsDisplay #html span{
+    position: absolute;
+    left:30%;
+    top:30%
+}
+
+
+
+
+
+
+
+
