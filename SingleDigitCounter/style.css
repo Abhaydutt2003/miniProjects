@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+}
+
+#inputContainer {
+    position: relative;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+    border: 3px black solid;
+    background: linear-gradient(to right, rgb(204, 102, 153), rgb(102, 153, 255));
+    align-items: center;
+}
+
+#inputContainer #ask {
+    position: relative;
+    top: 30%;
+    left: 40%;
+    cursor: pointer;
+}
+
+#inputContainer form {
+    position: relative;
+    top: 50%;
+    left: 10%;
+}
+
+#inputContainer form #take {
+    width: 30%;
+    height: 50px;
+    direction: rtl;
+    font-size: xx-large;
+}
+
+#sub {
+    position: relative;
+    left: 30%;
+    width: 20%;
+    height: 60px;
+    border-radius: 160px;
+    box-shadow: 5px 5px 9px 1px #a27ec6,
+        -5px -5px 9px 1px #a27ec6;
+    cursor: pointer;
+    font-size: x-large;
+}
+
+#outputArea {
+    background-color: gray;
+    height: 30%;
+    margin-top: 40px;
+    width: 700px;
+    margin-left: 100px;
+}
+
+#outputArea #display {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    left: 300px;
+    top: 100px;
+    overflow: hidden;
+}
+
+#outputArea #display #current {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+    border: 3px black solid;
+}
+
+#outputArea #display #next {
+    top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+    border: 3px black solid;
+}
+
+#outputArea #display p.animate{
+    transition: all 0.9s;
+    translate: 0 -100px;
+}
