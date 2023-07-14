@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: bradley hand, cursive;
+    font-size: xx-large;
+}
+
+body {
+    position: relative;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /* background:linear-gradient(to top,pink,white); */
+    /* background-color: pink; */
+}
+
+#mainBox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 70%;
+    background-color: darkgray;
+    border: 3px solid black;
+}
+
+#Ask {
+    position: absolute;
+    top: 20%;
+    font-size: 70px;
+}
+
+#yes {
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    padding: 1%;
+    border: 3px black solid;
+    border-radius: 160px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: gray;
+    cursor: pointer;
+}
+
+#no {
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    padding: 1%;
+    border: 3px black solid;
+    border-radius: 160px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: gray;
+}
+
+.animate {
+    animation-name: beat;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+
+}
+
+@keyframes beat {
+    0% {
+        background-color: rgb(216, 50, 50);
+    }
+
+    25% {
+        background-color: rgb(200, 126, 126);
+    }
+
+    50% {
+        background-color: rgb(216, 50, 50);
+    }
+
+    75% {
+        background-color: rgb(200, 126, 126);
+    }
+
+    100% {
+        background-color: rgb(216, 50, 50);
+    }
+}
+
+.animate2 {
+    animation-name: beat2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes beat2 {
+    0% {
+        background-color: pink;
+    }
+
+    25% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: pink
+    }
+
+    75% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: pink;
+    }
+}
